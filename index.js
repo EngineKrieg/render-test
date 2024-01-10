@@ -17,7 +17,7 @@ const unkownEndpoint = (request,response) => {
 }
 
 morgan("tiny")
-
+app.use(express.static('dist'))
 app.use(express.json())
 app.use(requestLogger)
 
